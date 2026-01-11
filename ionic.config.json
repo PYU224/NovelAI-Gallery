@@ -1,0 +1,7 @@
+{
+  "name": "NAI-viewer",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
