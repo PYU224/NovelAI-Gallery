@@ -43,3 +43,7 @@ npm-debug.log*
 .capacitor/
 android/
 ios/
+
+# fastlane は除外しない
+!fastlane/
+!fastlane/**

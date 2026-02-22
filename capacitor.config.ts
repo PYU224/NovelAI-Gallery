@@ -20,15 +20,13 @@ const config: CapacitorConfig = {
       splashFullScreen: true,
       splashImmersive: true
     },
-    plugins: {
-      NearbyConnections: {
-        endpointName: 'NovelAI Gallery',
-        serviceID: 'com.novelai.nearby',
-        strategy: 'P2P_STAR',
-        connectionType: 'HIGH_QUALITY',
-        lowPower: false,
-        autoConnect: false
-      }
+    NearbyConnections: {
+      endpointName: 'NovelAI Gallery',
+      serviceID: 'com.pyu.novelaigallery',
+      strategy: 'star',
+      connectionType: 'disruptive',
+      lowPower: false,
+      autoConnect: false
     }
   }
 };
