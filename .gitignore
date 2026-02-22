@@ -30,3 +30,16 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+
+# 環境変数ファイル（シークレット漏洩防止のため最重要）
+.env.local
+.env.*.local
+.env
+
+# Vite のキャッシュ
+.vite/
+
+# Capacitor 関連
+.capacitor/
+android/
+ios/

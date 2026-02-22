@@ -28,15 +28,33 @@ import '@ionic/vue/css/display.css';
  */
 
 /* @import '@ionic/vue/css/palettes/dark.always.css'; */
-/* @import '@ionic/vue/css/palettes/dark.class.css'; */
-import '@ionic/vue/css/palettes/dark.system.css';
+import '@ionic/vue/css/palettes/dark.class.css';
+/* dark.system.css の代わりに dark.class.css を使用。
+ * ダーク・ライト・システムの切り替えは useSettings が ion-app クラスで管理する。 */
 
 /* Theme variables */
 import './theme/variables.css';
 
+/* i18n */
+import i18n from './i18n';
+
+// ─── Capacitor ブリッジのメッセージチャネルエラー抑制 ───
+// @capawesome/capacitor-file-picker 等のプラグインで
+// "message channel closed before a response was received" が
+// 非致命的に繰り返し発生する既知の問題を抑制する。
+window.addEventListener('unhandledrejection', (event: PromiseRejectionEvent) => {
+  if (
+    event.reason instanceof Error &&
+    event.reason.message.includes('message channel closed before a response was received')
+  ) {
+    event.preventDefault();
+  }
+});
+
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
+  .use(router)
+  .use(i18n);
 
 router.isReady().then(() => {
   app.mount('#app');

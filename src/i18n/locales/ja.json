@@ -1,0 +1,242 @@
+{
+  "settings": {
+    "title": "設定",
+    "display": {
+      "title": "表示",
+      "darkMode": "ダークモード",
+      "darkModeOptions": {
+        "system": "システム",
+        "dark": "オン",
+        "light": "オフ"
+      },
+      "language": "言語",
+      "languageOptions": {
+        "system": "システム",
+        "ja": "日本語",
+        "en": "English"
+      }
+    },
+    "appInfo": {
+      "title": "アプリ情報",
+      "version": "バージョン",
+      "buildDate": "ビルド日"
+    },
+    "description": "NovelAIで生成された画像のメタデータを管理するためのアプリケーションです。プロンプト、パラメータ、キャラクター情報を自動抽出し、画像を効率的に整理・検索できます。",
+    "features": {
+      "title": "主な機能",
+      "imageImport": {
+        "title": "画像インポート",
+        "description": "PNG/WebP形式の画像に対応"
+      },
+      "folderManagement": {
+        "title": "フォルダ管理",
+        "description": "画像をフォルダで整理"
+      },
+      "favorites": {
+        "title": "お気に入り",
+        "description": "よく使う画像を登録"
+      },
+      "search": {
+        "title": "高度な検索",
+        "description": "プロンプト、タグで検索"
+      },
+      "swipe": {
+        "title": "スワイプナビゲーション",
+        "description": "画像間を簡単に移動"
+      }
+    },
+    "dataManagement": {
+      "title": "データ管理",
+      "clearAll": "すべてのデータをクリア",
+      "clearAllDesc": "画像、設定、キャッシュをすべて削除します",
+      "confirmTitle": "確認",
+      "confirmMessage": "すべてのデータ(画像、設定、キャッシュ)を削除しますか？この操作は元に戻せません。",
+      "confirmButton": "削除",
+      "cancelButton": "キャンセル",
+      "successTitle": "完了",
+      "successMessage": "すべてのデータを削除しました。アプリを再読み込みします。",
+      "errorTitle": "エラー",
+      "errorMessage": "データの削除に失敗しました。",
+      "okButton": "OK"
+    },
+    "developer": {
+      "title": "開発者",
+      "role": "Developer"
+    },
+    "other": {
+      "title": "その他",
+      "license": "ライセンス"
+    },
+    "copyright": "Copyright © {year} PYU"
+  },
+  "home": {
+    "filter": "フィルタ",
+    "all": "すべて",
+    "favorites": "お気に入り",
+    "folders": "フォルダ ({count})",
+    "uncategorized": "未分類",
+    "popularTags": "人気のタグ",
+    "other": "その他",
+    "settings": "設定",
+    "search": "検索...",
+    "searchPlaceholder": "プロンプト、ファイル名で検索...",
+    "sortPlaceholder": "並び替え",
+    "folderNamePlaceholder": "フォルダ名",
+    "sortBy": {
+      "label": "並び替え",
+      "dateDesc": "新しい順",
+      "dateAsc": "古い順",
+      "nameAsc": "名前順",
+      "seed": "シード順",
+      "steps": "ステップ数順"
+    },
+    "viewMode": {
+      "grid": "グリッド表示",
+      "list": "リスト表示",
+      "switchedToGrid": "グリッド表示に切り替えました",
+      "switchedToList": "リスト表示に切り替えました"
+    },
+    "count": "{n}件",
+    "messages": {
+      "metadataUpdated": "メタデータを更新しました",
+      "saveFailed": "保存に失敗しました",
+      "imageAdded": "画像が追加されました",
+      "imageDeleted": "画像を削除しました",
+      "favoriteAdded": "お気に入りに追加しました",
+      "favoriteRemoved": "お気に入りから削除しました",
+      "folderCreated": "フォルダを作成しました",
+      "folderRenamed": "フォルダ名を変更しました",
+      "folderDeleted": "フォルダを削除しました",
+      "loaded": "{n}件の画像を読み込みました",
+      "importing_n": "{n}件の画像を処理中...",
+      "imported": "{n}件の画像をインポートしました",
+      "exported": "{n}件の画像をエクスポートしました"
+    },
+    "actionSheet": {
+      "multiSelect": "複数選択モード",
+      "moveToFolder": "フォルダに移動",
+      "addFavorite": "お気に入りに追加",
+      "removeFavorite": "お気に入り解除",
+      "favoriteAdded": "お気に入りに追加しました",
+      "favoriteRemoved": "お気に入りから削除しました",
+      "edit": "編集",
+      "delete": "削除",
+      "cancel": "キャンセル",
+      "renameFolder": "名前を変更",
+      "folderRenameFailed": "フォルダ名の変更に失敗しました"
+    },
+    "editModal": {
+      "title": "メタデータ編集",
+      "cancel": "キャンセル",
+      "save": "保存",
+      "fileName": "ファイル名",
+      "fileNamePlaceholder": "ファイル名を入力",
+      "prompt": "プロンプト",
+      "promptPlaceholder": "プロンプトを入力",
+      "negativePrompt": "ネガティブプロンプト",
+      "negativePromptPlaceholder": "ネガティブプロンプトを入力",
+      "tags": "タグ（カンマ区切り）",
+      "organize": "整理",
+      "folder": "フォルダ",
+      "uncategorized": "未分類",
+      "favorite": "お気に入り",
+      "generationParams": "生成パラメータ"
+    },
+    "dialogs": {
+      "deleteImage": {
+        "title": "画像を削除",
+        "message": "この画像を削除しますか？",
+        "confirm": "削除",
+        "cancel": "キャンセル"
+      },
+      "createFolder": {
+        "title": "新しいフォルダ",
+        "message": "フォルダ名を入力してください",
+        "confirm": "作成",
+        "cancel": "キャンセル"
+      },
+      "renameFolder": {
+        "title": "フォルダ名を変更",
+        "message": "新しいフォルダ名を入力してください",
+        "confirm": "変更",
+        "cancel": "キャンセル"
+      },
+      "deleteFolder": {
+        "title": "フォルダを削除",
+        "message": "このフォルダを削除しますか？（中の画像は未分類に移動されます）",
+        "confirm": "削除",
+        "cancel": "キャンセル"
+      }
+    },
+    "empty": {
+      "title": "画像がありません",
+      "button": "画像をインポート"
+    },
+    "import": "インポート",
+    "export": "エクスポート",
+    "menu": {
+      "home": "ホーム",
+      "settings": "設定"
+    },
+    "select": {
+      "selected": "{count}件選択中",
+      "selectAll": "すべて選択",
+      "deselectAll": "選択解除",
+      "cancel": "キャンセル",
+      "moveToFolder": "フォルダに移動",
+      "delete": "削除",
+      "export": "エクスポート",
+      "confirmDelete": "{count}件の画像を削除しますか？",
+      "confirmDeleteMsg": "この操作は元に戻せません。",
+      "chooseFolder": "フォルダを選択",
+      "uncategorized": "未分類",
+      "newFolder": "+ 新しいフォルダを作成",
+      "moved": "{count}件を{folder}に移動しました",
+      "deleted": "{count}件を削除しました",
+      "exported": "{count}件をエクスポートしました"
+    }
+  },
+  "export": {
+    "title": "エクスポート",
+    "allZip": "全画像をZIPでダウンロード",
+    "filteredZip": "表示中の画像をZIPでダウンロード",
+    "csv": "メタデータをCSVでダウンロード",
+    "json": "メタデータをJSONでダウンロード",
+    "successCsv": "メタデータをCSVでエクスポートしました",
+    "successJson": "メタデータをJSONでエクスポートしました",
+    "failed": "エクスポートに失敗しました",
+    "failedCsv": "CSVエクスポートに失敗しました",
+    "failedJson": "JSONエクスポートに失敗しました"
+  },
+  "filter": {
+    "title": "フィルタ",
+    "tagMode": "タグ一致",
+    "tagModeOr": "いずれか (OR)",
+    "tagModeAnd": "すべて (AND)",
+    "sampler": "サンプラー",
+    "samplerAll": "すべてのサンプラー",
+    "steps": "ステップ数",
+    "stepsMin": "最小",
+    "stepsMax": "最大",
+    "cfg": "CFG スケール",
+    "cfgMin": "最小",
+    "cfgMax": "最大",
+    "reset": "フィルタをリセット",
+    "apply": "適用"
+  },
+  "viewer": {
+    "prompt": "プロンプト",
+    "negativePrompt": "ネガティブプロンプト",
+    "characterReference": "キャラクター参照 (Vibe Transfer)",
+    "generationSettings": "生成設定",
+    "seed": "Seed",
+    "steps": "Steps",
+    "cfgScale": "CFG Scale",
+    "sampler": "Sampler",
+    "tags": "タグ",
+    "fileName": "ファイル名",
+    "dateAdded": "追加日",
+    "shareNearby": "近くのデバイスと共有",
+    "close": "閉じる"
+  }
+}
